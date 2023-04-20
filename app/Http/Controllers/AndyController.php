@@ -12,10 +12,7 @@ class AndyController extends Controller
 {
     public function index()
     {
-        $news_list = News::where('release_flg', 1)->orderBy('notice_date', 'desc')->take(5)->get();
-        return view('index', [
-            'news_list' => $news_list,
-        ]);
+        return view('index');
     }
 
     public function stylebook()

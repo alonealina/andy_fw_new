@@ -1,0 +1,493 @@
+/* iPad・スマホへの振り分け */
+
+/* 表示領域が1020px以上の場合に適用するスタイル（パソコン向け） */
+@media screen and (min-width: 1020px) {
+}	
+
+/* 表示領域が1019px以下の場合に適用するスタイル（スマホ向け） */
+@media screen and (max-width: 1019px) and (min-width: 551px) {
+}
+
+@font-face {
+    font-family: "Medio";
+    src:url("../font/medio.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Trajan";
+    src:url("../font/TrajanPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ryumin";
+    src:url("../font/A-OTF-RyuminPr5-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Matisse";
+    src:url("../font/FOT-MatisseElegantoPro-M.otf") format("opentype");
+}
+
+
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #FFF4F8;
+    font: normal normal normal 16px/22px Bahnschrift;
+    color:#fff;
+}
+
+header, footer {
+    color:#fff;
+}
+
+header {
+    display: flex!important;
+    justify-content: space-between;
+    width:100vw;
+    position: fixed;
+    z-index: 9000;
+    padding-top: 15px;
+    padding-left: 150px;
+    padding-right: 50px;
+    transition: 0.5s;
+}
+
+a {
+    color:#262626;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#505050;
+    text-decoration: none;
+    opacity:0.7;
+}
+
+.header_margin {
+    margin-top:205px;
+}
+
+.header_padding_sp {
+    padding-top:83px;
+}
+
+.header_margin_sp {
+    margin-top: 83px;
+}
+
+.header_page_flex {
+    display: flex;
+    width:470px;
+    justify-content: space-between;
+}
+
+.header_page_flex_sp {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    bottom: 20px;
+    position: fixed;
+    z-index: 100;
+    left: 20px;
+}
+
+.header_page_name {
+    font: normal normal normal 20px/26px Serif;
+    text-shadow: 0px 0px 10px #000000;
+    width:400px;
+    padding-top: 25px;
+}
+
+.header_border {
+    height:3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #000000;
+    width:100%;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+.header_page_number {
+    font: normal normal normal 25px/51px Serif;
+    text-shadow: 0px 0px 10px #000000;
+    padding-top: 30px;
+}
+
+.header_page_name_sp {
+    font: normal normal normal 20px/26px Serif;
+    text-shadow: 0px 0px 10px #000000;
+    width: 80%;
+}
+
+.header_page_number_sp {
+    font: normal normal normal 25px/30px Serif;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.header_next_a {
+    color:#fff;
+}
+
+.header_sp {
+    padding: 0;
+    margin-top: 0px;
+    border-top: none;
+    background: #FFF4F8;
+}
+
+#registration_pc {
+    overflow-x: hidden;
+}
+
+#registration_sp {
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    font: normal normal normal 12px/16px Open Sans;
+    color: #fff;
+}
+
+.body_sp {
+    min-width:375px;
+    text-align:-webkit-center;
+}
+
+li {
+    list-style: none;
+}
+
+select {
+    background: #626262 0% 0% no-repeat padding-box;
+    color:#fff;
+    font: normal normal 600 20px/30px Open Sans;
+    height:50px;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../img/select_bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+
+.none {
+    opacity: 0;
+    z-index:-1;
+}
+
+.logo_a_sp {
+    width:150px;
+    height:100%;
+    display: block;
+    margin: 15px auto 0;
+}
+
+.logo_img_sp {
+    width:270px;
+    display: block;
+    margin: auto;
+    filter: invert(81%) sepia(181%) saturate(723%) hue-rotate(289deg) brightness(116%) contrast(185%);
+    transition: 0.5s;
+    z-index:2000;
+    position: relative;
+}
+
+.header_logo_div {
+    width:100%;
+    height:120px;
+    padding: 30px;
+    position: fixed;
+    z-index: 9000;
+    background: #131313 0% 0% no-repeat padding-box;
+}
+
+.header_logo {
+    margin: auto;
+    display: block;
+}
+
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 1000px;
+}
+
+.header_padding {
+    padding-top: 70px;
+}
+.banner_list {
+    width:100%;
+    padding:10px;
+    border-bottom: 1px solid #C73E72;
+}
+
+.banner_a {
+    width:100%;
+    margin:10px 0;
+}
+.banner_img {
+    width:100%;
+    margin: 5px 0;
+}
+
+.footer_logo {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.footer_icon_list {
+    padding: 20px 0;
+    text-align: center;
+}
+.icon_img {
+    width:25px;
+}
+
+.footer_pink {
+    background: #C73E72 0% 0% no-repeat padding-box;
+    opacity: 0.38;
+    font: normal normal normal 10px/15px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+    /*以下ハンバーガーメニューについて*/
+
+    .menu-btn {
+        position: absolute;
+        top: -10px;
+        right: 4%;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background: none;
+        border: none;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        right: 0;
+        content: '';
+        display: block;
+        height: 2px;
+        border-radius: 3px;
+        background-color: #C73E72;
+        position: absolute;
+    }
+    .menu-btn span {
+        width: 20px;
+    }
+    .menu-btn span:before {
+        bottom: 6px;
+        width: 20px;
+    }
+    .menu-btn span:after {
+        top: 6px;
+        width: 20px;
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+        background-color: #fff;
+    }
+
+    #menu-btn-check:checked ~ .logo_img_sp {
+        filter:none;
+    }
+
+    #menu-btn-check {
+        display: none;
+    }
+
+
+    .menu-content {
+        top: -10px;
+        width: 100%;
+        position: fixed;
+        height: 1000px;
+        left: 100%;/*leftの値を変更してメニューを画面外へ*/
+        z-index: 80;
+        background-color: rgba(238, 183, 203, 0.70);
+        transition: all 0.5s;/*アニメーション設定*/
+        padding-top: 100px;
+    }
+
+    .menu-content ul {
+        padding: 0 10px;
+        margin: 0 20px;
+        overflow: scroll;
+        height: 250px;
+        direction: rtl;
+    }
+    .menu-content ul li {
+        list-style: none;
+    }
+
+    .menu_icon_list {
+        margin-left: 30px;
+    }
+
+    .menu_head_sp, .menu_content_sp {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        color:#fff;
+        text-decoration: none;
+        position: relative;
+        font: normal normal 600 16px/20px Open Sans;
+    }
+
+    .menu_head_sp {
+        padding: 20px 15px 3px 3px;
+    }
+
+    .menu_content_sp {
+        padding: 5px;
+    }
+
+    .header_icon_list {
+        width: 220px;
+        margin-right: 0px;
+        margin-left: auto;
+        margin-top: 0px;
+    }
+
+    .header_icon_sp {
+        width:40px;
+        margin-right:10px;
+    }
+
+    #menu_brand_sp, #menu_company_sp, #menu_link_sp {
+        display: none;
+    }
+
+    .menu_content_sp:hover {
+        color: #505050;
+    }
+
+    .up, .down {
+        float: right;
+        margin-top: 5px;
+    }
+
+    .up {
+        display: none;
+    }
+
+    .down {
+        display: block;
+    }
+
+    .menu_a_sp {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+
+    #menu_brand_sp {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #menu-btn-check:checked ~ .menu-content {
+        left: 13%;/*メニューを画面内へ*/
+    }
+
+    #lightbox img {
+        position:relative;
+        z-index: 20;
+    }
+
+    .lb-prev {
+        left: -80px!important;
+        position: absolute;
+        opacity:1!important;
+    }
+
+    .lb-next {
+        right: -80px!important; 
+        position: absolute;
+        opacity:1!important;
+    }
+
+    .current {
+        border-bottom: 4px solid #000;
+    }
+
+    .google_a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .back_number_a {
+        width:100%;
+        display: block;
+        padding:3px 50px;
+        color: #fff;
+        opacity: 0.5;
+        font: normal normal normal 13px/20px Amiri Quran;
+    }
+
+    @media screen and (max-width: 1600px){
+        .item_right_img_div {
+            width: 46%;
+        }
+
+        .item_img_div {
+            width: 69%;
+        }
+        
+        .item_main_name {
+            font: normal normal bold 18px/20px Arial;
+            margin: 20px 0;
+        }
+
+        .item_right_name {
+            font: normal normal bold 15px/18px Arial;
+            margin-bottom: 5px;
+            height: 23px;
+        }
+
+        .item_right_text {
+            height: 43px;
+        }
+    }
+}
+
