@@ -83,44 +83,7 @@
         </a></li>
     </ul>
 
-    <div class="article_name">ANDYおススメ記事</div>
-    <ul class="slider-article" id="js-slider-recommend">
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new1.png') }}" class="article_img" alt="">
-            <div class="article_title">ANDY FashionPress14<br>発刊・販売中!!</div>
-            <div class="article_date">2023.03.24|特集</div>
-        </a></li>
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new2.png') }}" class="article_img" alt="">
-            <div class="article_title">大人気キャスト<br>RUNA&HINANO<br>注目のan新作ドレス</div>
-            <div class="article_date">2023.03.24|カタログ</div>
-        </a></li>
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new3.png') }}" class="article_img" alt="">
-            <div class="article_title">女性人気No.1<br>キャスト<br>一條りおなさん</div>
-            <div class="article_date">2023.03.24|コンテンツ</div>
-        </a></li>
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new4.png') }}" class="article_img" alt="">
-            <div class="article_title">'韓国風メイク'がキャストさんの間でもトレンド入り！</div>
-            <div class="article_date">2023.03.24|特集</div>
-        </a></li>
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new5.png') }}" class="article_img" alt="">
-            <div class="article_title">トレンドの出勤スタイル！<br>韓国風ヘアメイク</div>
-            <div class="article_date">2023.03.24|特集</div>
-        </a></li>
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new6.png') }}" class="article_img" alt="">
-            <div class="article_title">私の家族を紹介します！<br>鳳まりあ</div>
-            <div class="article_date">2023.03.24|インタビュー</div>
-        </a></li>
-        <li><a href="" class="article_a">
-            <img src="{{ asset('img/new7.png') }}" class="article_img" alt="">
-            <div class="article_title">YUKARI先生のハッピードレス占い</div>
-            <div class="article_date">2023.03.24|コンテンツ</div>
-        </a></li>
-    </ul>
+
 
 
 
