@@ -1,138 +1,76 @@
 $('.slider').slick({
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
+    autoplay: false,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 3,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
-    dots: true,//下部ドットナビゲーションの表示
+    slidesToShow: 4,//スライドを画面に4枚見せる
+    slidesToScroll: 4,//1回のスクロールで4枚の写真を移動して見せる
+    prevArrow: '<div class="slick-prev">＜　PREV</div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick-next">NEXT　＞</div>',//矢印部分NextのHTMLを変更
+    dots: false,//下部ドットナビゲーションの表示
+    responsive: [
+        {
+            breakpoint: 769,//モニターの横幅が769px以下の見せ方
+            settings: {
+                slidesToShow: 2,//スライドを画面に2枚見せる
+                slidesToScroll: 2,//1回のスクロールで2枚の写真を移動して見せる
+            }
+        },
+        {
+            breakpoint: 426,//モニターの横幅が426px以下の見せ方
+            settings: {
+                slidesToShow: 1,//スライドを画面に1枚見せる
+                slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+            }
+        }
+    ]
 });
 
 $('.slider_sp').slick({
-    autoplay: false,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
-    dots: false,//下部ドットナビゲーションの表示
-});
-
-$('.slider_news').slick({
-    autoplay: false,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 5,//スライドを画面にX枚見せる
-    slidesToScroll: 5,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">←</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">→</div>',//矢印部分NextのHTMLを変更
-    dots: false,//下部ドットナビゲーションの表示
-});
-
-$('.slider_news_sp').slick({
-    autoplay: false,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">←</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">→</div>',//矢印部分NextのHTMLを変更
-    dots: false,//下部ドットナビゲーションの表示
-});
-
-$('.slider_stylebook').slick({
-    autoplay: false,//自動的に動き出すか。初期値はfalse。
-    infinite: false,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">←</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">→</div>',//矢印部分NextのHTMLを変更
-    dots: false,//下部ドットナビゲーションの表示
-});
-
-$('.slider_stylebook_sp').slick({
-    autoplay: false,//自動的に動き出すか。初期値はfalse。
-    infinite: false,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">←</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">→</div>',//矢印部分NextのHTMLを変更
-    dots: false,//下部ドットナビゲーションの表示
-});
-
-
-
-
-$('.slider_cs').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
+    slidesToShow: 1,//スライドを画面に4枚見せる
+    slidesToScroll: 1,//1回のスクロールで4枚の写真を移動して見せる
     prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
     nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
     dots: true,//下部ドットナビゲーションの表示
 });
 
-$('.slider_ec').slick({
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
-    dots: true,//下部ドットナビゲーションの表示
-});
-
-$('.slider_ec_sp').slick({
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
-    dots: true,//下部ドットナビゲーションの表示
-});
-
-$('.slider_pickup').slick({
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 3,//スライドを画面にX枚見せる
-    slidesToScroll: 3,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
-    dots: true,//下部ドットナビゲーションの表示
-});
-
-$('.slider_brand').slick({
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 3,//スライドを画面にX枚見せる
-    slidesToScroll: 3,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '<div class="slick-prev">＜</div>',//矢印部分PreviewのHTMLを変更
-    nextArrow: '<div class="slick-next">＞</div>',//矢印部分NextのHTMLを変更
-    dots: true,//下部ドットナビゲーションの表示
-});
-
-$('.slider_brand_sp').slick({
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面にX枚見せる
-    slidesToScroll: 1,//1回のスクロールでX枚の写真を移動して見せる
-    prevArrow: '',//矢印部分PreviewのHTMLを変更
-    nextArrow: '',//矢印部分NextのHTMLを変更
-    dots: true,//下部ドットナビゲーションの表示
-});
-
-$('.slider_fw').slick({
-    fade:true,//切り替えをフェードで行う。初期値はfalse。
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
-    autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
-    speed:1000,//スライドの動きのスピード。初期値は300。
-    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1,//スライドを画面に3枚見せる
-    slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
-    arrows: true,//左右の矢印あり
-    prevArrow: '',//矢印部分PreviewのHTMLを変更
-    nextArrow: '',//矢印部分NextのHTMLを変更
-        pauseOnFocus: false,//フォーカスで一時停止を無効
-        pauseOnHover: false,//マウスホバーで一時停止を無効
-        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+$(function () {
+    $('#js-slider-sp').slick({
+        arrows: true, // 前・次のボタンを表示する
+        dots: true, // ドットナビゲーションを表示する
+        appendDots: $('.dots-2'), // ドットナビゲーションの生成位置を変更
+        speed: 1000, // スライドさせるスピード（ミリ秒）
+        slidesToShow: 1, // 表示させるスライド数
+        centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+        variableWidth: true, // スライド幅の自動計算を無効化
+        dots: true,//下部ドットナビゲーションの表示
+    });
+    $('#js-slider-new').slick({
+        speed: 1000, // スライドさせるスピード（ミリ秒）
+        slidesToShow: 3,//スライドを画面に4枚見せる
+        slidesToScroll: 1,//1回のスクロールで4枚の写真を移動して見せる    
+        centerMode: false, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+        variableWidth: true, // スライド幅の自動計算を無効化
+        arrows: false,//下部ドットナビゲーションの表示
+        dots: false,//下部ドットナビゲーションの表示
+    });
+    $('#js-slider-old').slick({
+        speed: 1000, // スライドさせるスピード（ミリ秒）
+        slidesToShow: 3,//スライドを画面に4枚見せる
+        slidesToScroll: 1,//1回のスクロールで4枚の写真を移動して見せる    
+        centerMode: false, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+        variableWidth: true, // スライド幅の自動計算を無効化
+        arrows: false,//下部ドットナビゲーションの表示
+        dots: false,//下部ドットナビゲーションの表示
+    });
+    $('#js-slider-recommend').slick({
+        speed: 1000, // スライドさせるスピード（ミリ秒）
+        slidesToShow: 3,//スライドを画面に4枚見せる
+        slidesToScroll: 1,//1回のスクロールで4枚の写真を移動して見せる    
+        centerMode: false, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+        variableWidth: true, // スライド幅の自動計算を無効化
+        arrows: false,//下部ドットナビゲーションの表示
+        dots: false,//下部ドットナビゲーションの表示
+    });
+  
 });
