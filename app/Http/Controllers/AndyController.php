@@ -15,14 +15,44 @@ class AndyController extends Controller
         return view('index');
     }
 
-    public function stylebook()
+    public function fp13()
     {
-        return view('stylebook');
+        return view('fp13');
     }
 
-    public function company()
+    public function fp14()
     {
-        return view('company');
+        return view('fp14');
+    }
+
+    public function yui()
+    {
+        return view('yui');
+    }
+
+    public function miyu()
+    {
+        return view('miyu');
+    }
+
+    public function enrike()
+    {
+        return view('enrike');
+    }
+
+    public function fp_about()
+    {
+        return view('fp_about');
+    }
+
+    public function koreahair()
+    {
+        return view('koreahair');
+    }
+
+    public function koreamake()
+    {
+        return view('koreamake');
     }
 
     public function contact()

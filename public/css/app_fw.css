@@ -281,7 +281,6 @@ select {
     height:60px;
 }
 
-
 .article_date {
     font-size: 10px;
     transform: scale(0.8);
@@ -289,6 +288,49 @@ select {
     margin-left: -13px;
 }
 
+.article_text {
+    font: normal normal normal 12px/17px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+.buy_btn {
+    width:140px;
+}
+
+.sns_img {
+    position: relative;
+}
+
+.enrike2_div {
+    background-color: #fff;
+    padding-left:10px;
+    padding-bottom: 30px;
+}
+
+.koreamake_div {
+    background-color: #fff;
+    padding:50px 10px 10px;
+    margin-bottom: 30px;
+}
+
+.about_div {
+    padding: 0 10px 50px;
+}
+
+.koreamake_ex {
+    font: normal normal normal 12px/12px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #1A1311;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.koreamake_a {
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 500px) {
     /*以下ハンバーガーメニューについて*/
