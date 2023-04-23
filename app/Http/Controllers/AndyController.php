@@ -40,6 +40,26 @@ class AndyController extends Controller
         return view('enrike');
     }
 
+    public function riona()
+    {
+        return view('riona');
+    }
+
+    public function cover()
+    {
+        return view('cover');
+    }
+
+    public function pet()
+    {
+        return view('pet');
+    }
+
+    public function fortune()
+    {
+        return view('fortune');
+    }
+
     public function fp_about()
     {
         return view('fp_about');
@@ -60,6 +80,13 @@ class AndyController extends Controller
         return view('contact');
     }
 
+    public function send_complete()
+    {
+        return view('send_complete');
+    }
+
+
+    
     public function mail_send(Request $request)
     {
     	$data = ['name' => $request->name,

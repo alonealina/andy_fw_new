@@ -299,6 +299,10 @@ select {
 .buy_btn {
     width:140px;
 }
+.cover_buy_btn {
+    width:140px;
+    position: absolute;
+}
 
 .sns_img {
     position: relative;
@@ -330,6 +334,180 @@ select {
 
 .koreamake_a {
     text-decoration: underline;
+}
+
+.riona_ex {
+    top: -110px;
+    position: relative;
+    font: normal normal normal 10px/12px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #1A1311;
+    padding-left:10px;
+}
+
+.cover1 {
+    background-image: url(../img/cover1.png);
+    background-size: cover;
+    height: 143vw;
+    margin-bottom: 20px;
+}
+
+.cover2 {
+    background-image: url(../img/cover2.png);
+    background-size: cover;
+    height: 950vw;
+    margin-bottom: 10px;
+}
+
+.cover_flex {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.cover_item {
+    width:49%;
+    text-align: center;
+    font: normal normal normal 12px/12px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #1A1311;
+}
+
+.cover_insta {
+    width:20px;
+    margin-top: 10px;
+}
+
+.pet_div {
+    padding:0 10px;
+    margin-bottom: 50px;
+}
+
+.pet_ex {
+    top: -50px;
+    position: relative;
+    font: normal normal normal 10px/15px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #1A1311;
+    text-align: right;
+}
+
+.fortune_div {
+    background-size: cover;
+    height: 143vw;
+}
+
+.fortune1 {
+    background-image: url(../img/fortune1.png);
+}
+.fortune2 {
+    background-image: url(../img/fortune2.png);
+}
+.fortune3 {
+    background-image: url(../img/fortune3.png);
+}
+.fortune4 {
+    background-image: url(../img/fortune4.png);
+}
+.fortune5 {
+    background-image: url(../img/fortune5.png);
+}
+.fortune6 {
+    background-image: url(../img/fortune6.png);
+}
+.fortune7 {
+    background-image: url(../img/fortune7.png);
+}
+.fortune8 {
+    background-image: url(../img/fortune8.png);
+}
+.fortune9 {
+    background-image: url(../img/fortune9.png);
+}
+.fortune10 {
+    background-image: url(../img/fortune10.png);
+}
+.fortune11 {
+    background-image: url(../img/fortune11.png);
+}
+.fortune12 {
+    background-image: url(../img/fortune12.png);
+}
+
+.fortune_buy_btn {
+    width: 140px;
+    top: 101vw;
+    right: 36vw;
+    position: relative;
+    float: right;
+}
+
+.contact_form {
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.contact_title {
+    font: normal normal bold 20px/40px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 20px;
+    margin:15px 0;
+}
+
+.contact_name {
+    font: normal normal normal 16px/32px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.contact_text {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 4px #00000033;
+    border-radius: 5px;
+    width: 100%;
+    font: normal normal normal 16px/25px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    padding: 5px 10px 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+.contact_text::placeholder {
+    color: #CCCCCC;
+}
+
+.contact_textarea {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 4px #00000033;
+    border-radius: 5px;
+    width: 100%;
+    font: normal normal normal 16px/25px Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    padding: 5px 10px 8px;
+    border: none;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.send_btn {
+    display: block;
+    margin: auto;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #707070 0% 0% no-repeat padding-box;
+    border-radius: 5px; 
+    width: 90px;
+    padding: 8px 0;
+}
+
+.send_complete {
+    font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    padding:20px;
+    margin-bottom
 }
 
 @media screen and (max-width: 500px) {
