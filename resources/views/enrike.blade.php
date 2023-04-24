@@ -12,7 +12,7 @@
 <div class="header_padding"></div>
 <img src="{{ asset('img/enrike1.png') }}" class="" alt="" style="">
 <div class="enrike2_div">
-    <img src="{{ asset('img/enrike2.png') }}" class="" alt="" style="    margin-bottom: 30px;">
+    <img src="{{ asset('img/enrike2.png') }}" class="" alt="" style="margin-bottom: 30px; margin-top: 50px;">
     <a href="https://twitter.com/rie0985" target="_blank"><img src="{{ asset('img/enrike_twitter.png') }}" class="sns_img" alt="" style="width:86px;  left: 0px;"></a>
     <a href="https://www.instagram.com/eri.ogawa1102" target="_blank"><img src="{{ asset('img/enrike_insta.png') }}" class="sns_img" alt="" style="width:127px; left: 10px; "></a>
     <a href="https://www.youtube.com/@enrikekukan" target="_blank"><img src="{{ asset('img/enrike_youtube.png') }}" class="sns_img" alt="" style="width:121px; left: 20px; "></a>

@@ -507,7 +507,6 @@ select {
     letter-spacing: 0px;
     color: #000000;
     padding:20px;
-    margin-bottom
 }
 
 @media screen and (max-width: 500px) {
@@ -590,7 +589,7 @@ select {
         height: 1000px;
         left: 100%;/*leftの値を変更してメニューを画面外へ*/
         z-index: 80;
-        background-color: rgba(238, 183, 203, 0.70);
+        background-color: rgba(238, 183, 203, 0.90);
         transition: all 0.5s;/*アニメーション設定*/
         padding-top: 100px;
     }
